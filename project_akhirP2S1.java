@@ -1,12 +1,12 @@
 import javax.swing.*;
 import java.util.Arrays;
 
-public class Menu {
+public class Sorting {
 
     static int angka;
     static int[] nilaiArray;
 
-    private JPanel MenuPanel;
+    private JPanel SortingPanel;
     private JTextField tfBilanganAcak;
     private JButton acakAngkaButton;
     private JButton sortingAscendingButton;
@@ -17,14 +17,14 @@ public class Menu {
     private JTextField tfAngka;
 
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Menu");
-        frame.setContentPane(new Menu().MenuPanel);
+        JFrame frame = new JFrame("Mengurutkan Bilangan Genap");
+        frame.setContentPane(new Sorting().SortingPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
 
-    public Menu() {
+    public Sorting() {
         acakAngkaButton.addActionListener(e -> {
             angka = Integer.parseInt(tfAngka.getText());
             nilaiArray = new int[angka];
